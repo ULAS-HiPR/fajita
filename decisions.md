@@ -25,7 +25,7 @@ Decisions about the core that bind Fajita live in [Ogma2's decisions](https://gi
 
 | ID | Question | Who answers | Note |
 | --- | --- | --- | --- |
-| O-1 | Propulsion's requirements | James / propulsion | Due at the EuRoC meeting, 25 Nov |
+| O-1 | Propulsion's requirements | James / propulsion | Due at the EuRoC meeting, Thu 26 Nov, 6pm |
 | O-2 | Each valve's unpowered state, and what opens the vent if PROP or Fajita dies | Serafina with propulsion |  |
 | O-3 | What Fajita does if Burrito, CAN or the operator link drops mid-fill | Serafina |  |
 | O-4 | Whether the vent command after an abort travels on Fajita's own link or on Burrito's radio over bus 1 | Serafina with Seán |  |

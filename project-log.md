@@ -15,3 +15,10 @@ preserves how it changes.
   can own, and the open questions (as Open rows in `decisions.md`).
 - Owner: Serafina. Helpers: Rory, Arnav.
 - Discussion lives in the Fajita post in Discord's avionics-projects forum.
+
+## 22 November 2026: EuRoC meeting date corrected
+
+- The seed copied "25 Nov" for the EuRoC meeting from the Notion brief. Jay,
+  in #avionics on 20 Nov, answering whether the avionics meeting would run at
+  18:00 Thursday next week: "No, we'll be doing the EuRoac meeting then". So
+  it's Thursday 26 November, 6pm; place not stated. Fixed here and in Notion.
