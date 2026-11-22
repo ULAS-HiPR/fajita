@@ -29,7 +29,7 @@ Decisions about the core that bind Fajita live in [Ogma2's decisions](https://gi
 | O-2 | Each valve's unpowered state, and what opens the vent if PROP or Fajita dies | Serafina with propulsion |  |
 | O-3 | What Fajita does if Burrito, CAN or the operator link drops mid-fill | Serafina |  |
 | O-4 | Whether the vent command after an abort travels on Fajita's own link or on Burrito's radio over bus 1 | Serafina with Seán |  |
-| O-5 | PROP eFuse fault mode: latch-off or retry (open in Ogma2 as 'Fajita owner') | Serafina |  |
+| O-5 | Does Fajita need the PROP branch to latch off after a fault? Ogma2's D-22Nov.4 made it retry (LM5069-2) | Serafina |  |
 | O-6 | Integration date | James |  |
 | O-7 | The chamber, assumed for 4 January | Propulsion |  |
 

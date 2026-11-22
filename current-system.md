@@ -27,7 +27,7 @@ owner's agreement and a row in both repositories.
 | With | What | Ogma2 decision |
 | --- | --- | --- |
 | Burrito | CAN bus 1: Harwin Gecko 3-way to Burrito's J501 (Fajita's end has to match), 500 kbit/s Classical CAN, two nodes, fixed termination. Carries permissions, mode, slow state and health; no sensor streams, nothing unsafe when stale. | [D-18Nov.4](https://github.com/ULAS-HiPR/Ogma2/blob/main/decisions.md), [D-2Nov.9](https://github.com/ULAS-HiPR/Ogma2/blob/main/decisions.md) |
-| Churro | Power from Churro's 6S PROP branch, through an eFuse. Churro keeps PROP powered through an abort so Fajita can vent. Fajita converts to its actuators' voltages itself. | [D-21Nov.1](https://github.com/ULAS-HiPR/Ogma2/blob/main/decisions.md) |
+| Churro | Power from Churro's 6S PROP branch: an LM5069-2 hot-swap stage limited at 19.4 A minimum that retries after a fault ([D-22Nov.4](https://github.com/ULAS-HiPR/Ogma2/blob/main/decisions.md)). Churro keeps PROP powered through an abort so Fajita can vent. Fajita converts to its actuators' voltages itself. | [D-21Nov.1](https://github.com/ULAS-HiPR/Ogma2/blob/main/decisions.md) |
 | e-reg | The e-reg is its own board on its own CAN link to Fajita, never on bus 1. Fajita keeps the main valves and overpressure protection, with its own pressure transducers or a cross-check of the e-reg's, so it can vent whatever the e-reg does. | [D-21Nov.10](https://github.com/ULAS-HiPR/Ogma2/blob/main/decisions.md) |
 | Access panel | One USB-C at the panel for integration; no firmware over CAN, nothing flashed on the rail. | [D-19Nov.9](https://github.com/ULAS-HiPR/Ogma2/blob/main/decisions.md), [D-21Nov.4](https://github.com/ULAS-HiPR/Ogma2/blob/main/decisions.md) |
 
