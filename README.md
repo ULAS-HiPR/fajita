@@ -1,6 +1,6 @@
 # Fajita
 
-HiPR's the propulsion controller. Owner: Serafina. Helpers: Rory, Arnav.
+HiPR's propulsion controller. Owner: Serafina. Helpers: Rory, Arnav.
 Nothing is designed, built or flown yet.
 
 **Start here:** [current system](current-system.md) → [decisions](decisions.md) → [Notion brief](https://app.notion.com/p/3e3cc5f72fe281c1959de7809c5ae47d).

@@ -6,8 +6,7 @@ what is true now. Nothing is designed, built or flown yet.
 Owner: Serafina. Helpers: Rory, Arnav. Next milestone: Propulsion's requirements at the EuRoC meeting (25 Nov); requirements captured by 14 Dec.
 
 Seeded from the [Notion brief](https://app.notion.com/p/3e3cc5f72fe281c1959de7809c5ae47d) and from Ogma2's decisions as they stood on
-22 November. Where they disagree, Ogma2's decisions win, and the difference is
-listed below.
+22 November. Where they disagree, Ogma2's decisions win.
 
 ## Purpose
 
