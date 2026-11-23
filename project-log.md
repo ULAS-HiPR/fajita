@@ -36,3 +36,18 @@ preserves how it changes.
 
 - Seán asked for one row per valve and sensor Fajita drives or reads. Started
   `propulsion-valves-and-sensors.md` from what the repo already says; blanks are questions for propulsion on 26 Nov.
+
+## 23 November 2026: Fajita's scope from propulsion
+
+- James, in the Fajita Discord post (Seán agreed): Fajita, which propulsion
+  calls the ECU, sits by the two main valves. It actuates both main valves,
+  fires the igniter's e-match, reads pressure transducers and runs the abort
+  procedures, plus the software states (abort, fill, launch and so on).
+- Three tanks (fuel, oxidiser, nitrogen), each with a vent valve. James
+  suggested Fajita might drive the bottom tank's vent and the e-reg boards the
+  top two. That conflicts with Ogma2's D-21Nov.10 (Fajita can vent whatever
+  the e-reg does), so it is an open question (O-8), not a decision.
+- Two e-regs, each on its own board in the plumbing between the tanks, where
+  D-21Nov.10 had one e-reg board. About eight PTs: engine, igniter, three
+  tanks, two e-regs and a spare.
+- Updated the valve and sensor table, and added O-8 to O-13.
