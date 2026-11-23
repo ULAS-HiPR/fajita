@@ -31,3 +31,8 @@ preserves how it changes.
   panel (D-21Nov.4); the arm-switch headers (D-21Nov.12); the umbilical's
   Churro end, J801 (D-22Nov.6); the PROP and ACT branches retry after a fault
   and limit at 19.4 A minimum (D-22Nov.4), whichever of these applies here.
+
+## 23 November 2026: valve and sensor table started
+
+- Seán asked for one row per valve and sensor Fajita drives or reads. Started
+  `propulsion-valves-and-sensors.md` from what the repo already says; blanks are questions for propulsion on 26 Nov.
