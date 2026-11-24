@@ -1,6 +1,6 @@
 # Fajita current system
 
-Updated 22 November 2026. Decisions live in [decisions.md](decisions.md); this file states
+Updated 24 November 2026. Decisions live in [decisions.md](decisions.md); this file states
 what is true now. Nothing is designed, built or flown yet.
 
 Owner: Serafina. Helpers: Rory, Arnav. Next milestone: Propulsion's requirements at the EuRoC meeting (Thu 26 Nov, 6pm); requirements captured by 14 Dec.
@@ -19,6 +19,21 @@ Run the engine's valves and sensors from fill to burnout, and leave the vehicle 
 - A remotely controlled vent or offload after an abort (LV-0190).
 - Six hours on the rail from the PROP pack.
 
+## Simple Description of Fajita
+The current simplest model of Fajita (discussed with Jay and James 24Nov)
+
+Fajita is the engine control unit (PCB). It sits between the oxidiser and combustion tanks and does three things:
+
+1. Opens and closes 2 main valves (ox to combustion, fuel to combustion), 1 fill/vent valve (ox tank) by driving servos (maybe 35kg 24 V DC)
+2. Fires 1 igniter (1 e-match +1 backup e-match) (same e-match as burrito)
+3. Reads 3 PTs (PT5502 8.32v dc 4.2mA), 2-3 thermocouples
+
+Fajita will connect to Burrito and 2 e-regs over CAN, and to Churro for power.
+
+Firmware (to be detailed later, just a rough idea):
+Software decides when and what happens during each state: safe → fill → armed → fire. From any of those states it can go to abort → vent.
+
+
 ## Interfaces
 
 Set by Ogma2's decisions unless marked proposed. Changing one needs the other
@@ -33,14 +48,14 @@ owner's agreement and a row in both repositories.
 
 ## Also known
 
-- About nine servo valves, three per bank, with angle sensors on all but the main fuel valves; no propulsion solenoids (Jay, 20 Nov, per the Notion brief).
+- About nine servo valves (not all under Fajita's control), three per bank, with angle sensors on all but the main fuel valves; no propulsion solenoids (Jay, 20 Nov, per the Notion brief).
 - A servo stays where it is when it loses power, so the vent must open without power: a spring-return actuator, a normally-open solenoid on the vent only, or a relief valve set below the tank's limit. Every other valve's unpowered state is written down and accepted in review (ECU-06, LV-0190).
 
 ## External rules
 
 LV-0190 (remote vent or offload after an abort); LV-0030 (igniter armed and disarmed with nobody within 15 m); LV-0110, 0130, 0150 (loading); LV-1020 (hold-down); Appendix E1 (valve power disconnect); LV-0300–0320 (the PROP pack: no LiPo, charged through the umbilical, 6 h); SE-0010–0030 (launch control, propulsion's).
 
-## Parts one person can own
+## Parts one person can own (rough, not decided yet)
 
 1. Valve servo drivers, angle sensing and the E1 power disconnect
 2. Sensor front ends: pressure and temperature
