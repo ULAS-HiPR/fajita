@@ -31,3 +31,5 @@ preserves how it changes.
   panel (D-21Nov.4); the arm-switch headers (D-21Nov.12); the umbilical's
   Churro end, J801 (D-22Nov.6); the PROP and ACT branches retry after a fault
   and limit at 19.4 A minimum (D-22Nov.4), whichever of these applies here.
+
+  ## 24 November 2026: outlined simple description of Fajita
